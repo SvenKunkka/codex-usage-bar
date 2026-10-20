@@ -1,3 +1,7 @@
+<!-- SVENKUNKKA-README-NAV:BEGIN -->
+[中文项目说明](#project-overview-zh) · [English overview](#project-overview-en) · [维护者 X / Maintainer on X](https://x.com/Svenu1s5)
+<!-- SVENKUNKKA-README-NAV:END -->
+
 # Codex Usage Bar
 
 [![Build and test](https://github.com/SvenKunkka/codex-usage-bar/actions/workflows/build.yml/badge.svg)](https://github.com/SvenKunkka/codex-usage-bar/actions/workflows/build.yml)
@@ -66,3 +70,30 @@ All communication is between this app and the Codex process running locally on y
 ## Disclaimer
 
 This is an unofficial community project and is not affiliated with or endorsed by OpenAI. Codex and OpenAI are trademarks of their respective owners.
+
+
+---
+
+<!-- SVENKUNKKA-PROJECT-INFO:BEGIN -->
+
+<a id="project-overview-zh"></a>
+## 中文项目说明
+
+原生 macOS 菜单栏工具，通过本机 Codex App Server 显示剩余用量、额度窗口与重置时间，支持定时刷新、手动刷新及登录启动。
+
+**使用入口：** 需要 macOS 13 及以上，以及已安装并登录的 Codex CLI 或应用。运行 `./scripts/test.sh` 和 `./scripts/build-app.sh`，生成 `dist/Codex Usage Bar.app`。
+
+**范围说明：** 这是非官方社区项目；应用复用本机 Codex 登录，通过额度读取接口查询，不直接读取或存储账号令牌。
+
+<a id="project-overview-en"></a>
+## English project overview
+
+A native macOS menu-bar app that reads the local Codex App Server to display remaining usage, quota windows and reset times, with automatic and manual refresh and optional launch at login.
+
+**Getting started:** Requires macOS 13 or later and an installed, signed-in Codex CLI or app. Run `./scripts/test.sh` and `./scripts/build-app.sh` to create `dist/Codex Usage Bar.app`.
+
+**Scope:** This is an unofficial community project. It reuses the local Codex login through the quota-reading interface without directly reading or storing account tokens.
+
+**仓库维护者 / Repository maintainer:** [SvenKunkka](https://github.com/SvenKunkka) · [X / Twitter](https://x.com/Svenu1s5)
+
+<!-- SVENKUNKKA-PROJECT-INFO:END -->
